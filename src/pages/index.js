@@ -15,7 +15,7 @@ export default function Home() {
             <link rel="icon" href="/favicon.png" sizes="32x32" type="image/png" />
             <meta property="og:description" content={`Discover Your Favourite Song Info with lyrics, chords, and VST guides.`} />
             <meta property="og:image" content="/Logo.svg"/>
-            <meta property="og:url" content={`https://kolmuzika.web.app/`} />
+            <meta property="og:url" content={`https://kolmuzika.vercel.app/`} />
             <meta property="og:type" content="music.song" />
             <meta name="twitter:card" content="/Logo.svg"/>
             <meta name="twitter:title" content="Home - Kolmuzika"/>
