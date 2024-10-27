@@ -176,12 +176,15 @@
   .introduction h2 {
     font-size: 2rem; /* Title size */
     margin-bottom: 10px;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
   }
   
   .introduction p {
     font-size: 1rem; /* Paragraph size */
     line-height: 1.5; /* Spacing between lines */
-    margin: 10px 0; /* Margin around paragraphs */
+    margin: 10px 10px; /* Margin around paragraphs */
   }
   
   /* Logo Wrapper with Responsive Styling */
@@ -236,11 +239,17 @@
   /* Responsive Styles */
   @media (max-width: 600px) {
     .introduction h2 {
-      font-size: 1.5rem; /* Smaller title size on mobile */padding: 0px 20px 5px;
+      font-size: 1.5rem; /* Smaller title size on mobile */
+      padding: 0px 20px 5px;
+      margin-bottom: 10px;
+      margin-top: 10px;
+      margin-left: 10px;
+      margin-right: 10px;
     }
   
     .introduction p {
       font-size: 0.9rem; /* Smaller paragraph size on mobile */padding: 0px 20px 5px;
+      margin: 10px 10px; /* Margin around paragraphs */
     }
   }
 
