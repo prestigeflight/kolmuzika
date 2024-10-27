@@ -14,13 +14,13 @@ export default function Home() {
             <meta property="og:title" content="Home - Kolmuzika"/>
             <link rel="icon" href="/favicon.png" sizes="32x32" type="image/png" />
             <meta property="og:description" content={`Discover Your Favourite Song Info with lyrics, chords, and VST guides.`} />
-            <meta property="og:image" content="/Logo.svg"/>
+            <meta property="og:image" content="/favicon.png"/>
             <meta property="og:url" content={`https://kolmuzika.vercel.app/`} />
             <meta property="og:type" content="music.song" />
-            <meta name="twitter:card" content="/Logo.svg"/>
+            <meta name="twitter:card" content="/favicon.png"/>
             <meta name="twitter:title" content="Home - Kolmuzika"/>
             <meta name="twitter:description" content={`Discover Your Favourite Song Info with lyrics, chords, and VST guides.`} />
-            <meta name="twitter:image" content="/Logo.svg"/>
+            <meta name="twitter:image" content="/favicon.png"/>
         </Head>
       <main className={styles.main}>
         <section className={styles.introduction}>
