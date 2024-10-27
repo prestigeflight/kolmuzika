@@ -157,7 +157,7 @@
   .main {
     max-width: 800px; /* Max width for main content */
     width: 100%; /* Full width on smaller screens */
-    margin: 0; /* Remove all margins */
+    margin: 0 auto; /* Remove all margins */
     display: flex; /* Enable Flexbox */
     flex-direction: column; /* Align items vertically */
     align-items: center; /* Center items horizontally */
@@ -241,22 +241,18 @@
       font-size: 0.9rem; /* Smaller paragraph size on mobile */padding: 0px 20px 5px;
     }
   
-    .ctaButton {
-      width: 100%; /* Full width button on mobile */
-      font-size: 1rem; /* Adjust button size */
-      width: 21em;
-    }
-  }
 
-  .container {
-    padding: 20px;
-    background-color: #121212; /* Dark background like Spotify */
-    color: white; /* Text color */
-    min-height: 100vh; /* Fill full viewport height */
-    display: flex;
-    flex-direction: column; /* Align children vertically */
-    align-items: center; /* Center children horizontally */
-    justify-content: center; /* Center children vertically */
-    text-align: center; /* Center text inside children */
+
+.container {
+  padding: 20px;
+  background-color: #121212;
+  color: white;
+  min-height: 100vh;
+  width: 100%; /* Ensures full width */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
 }
-
