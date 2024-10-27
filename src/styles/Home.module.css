@@ -9,6 +9,7 @@
     position: sticky;
     top: 0;
     z-index: 1000;
+    width: 100%;
 }
 
 /* Logo Style */
@@ -109,6 +110,7 @@
     padding: 20px;
     background-color: #F0F0F0;
     color: #333;
+    width: 100%;
   }
   
   .logoContainer {
@@ -167,7 +169,7 @@
 
   
   .introduction {
-    margin: 20px 0;
+    margin: 20px 20px 0;
     text-align: center; /* Center text in the introduction */
   }
   
