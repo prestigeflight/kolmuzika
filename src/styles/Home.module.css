@@ -1,0 +1,262 @@
+/* Header Container */
+.hd-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+/* Logo Style */
+.hd-logo {
+    font-family: 'Handjet', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Menu Button Style (Visible on Mobile) */
+.hd-menu-button {
+    display: none;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+    background-color: white;
+    position: relative;
+    
+}
+
+/* SVG Lines Inside Menu Button */
+.hd-menu-button svg line {
+    stroke: black;
+    stroke-width: 2;
+}
+
+/* Desktop Navigation Links */
+.hd-nav ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    
+}
+
+/* Nav Links */
+.hd-nav ul li {
+    font-size: 16px;
+    font-weight: 600;
+    color: #333;
+    cursor: pointer;
+}
+
+/* Menu Button Visible Only on Mobile */
+@media (max-width: 768px) {
+    .hd-menu-button {
+        display: flex;
+    }
+
+    /* Hide Navigation Links Off-screen on Mobile by Default */
+    .hd-nav {
+        transform: translateX(100%); /* Start off-screen to the right */
+        transition: transform 0.3s ease-out;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: #fff;
+        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+        padding: 10px 0;
+        z-index: 100;
+    }
+
+    /* Show Nav Links on Mobile When Menu is Open */
+    .hd-nav.hd-nav-open {
+        transform: translateX(0); /* Slide in from the right */
+    }
+
+    /* Stack Nav Links Vertically on Mobile */
+    .hd-nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hd-nav ul li {
+        padding: 10px 0;
+        font-size: 18px;
+    }
+}
+
+
+/* Logo Text Right-Aligned */
+.hd-logo svg {
+    float: right;
+}
+
+/* src/components/Footer.module.css */
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #F0F0F0;
+    color: #333;
+  }
+  
+  .logoContainer {
+    margin-bottom: 10px;
+  }
+  
+  .linksContainer {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .linksContainer a {
+    color: #333;
+    text-decoration: none;
+    font-size: 14px;
+  }
+  
+  .linksContainer a:hover {
+    text-decoration: underline;
+  }
+  
+  @media (min-width: 600px) {
+    .footer {
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 20px 40px;
+    }
+  
+    .linksContainer {
+      gap: 30px;
+    }
+  }
+  
+  
+.hd-nav a {
+    color: inherit; /* Inherit color from parent */
+    text-decoration: none; /* Remove underline */
+    transition: transform 0.2s ease, color 0.2s ease; /* Transition effect */
+  }
+  
+  .hd-nav a:hover {
+    transform: scale(1.1); /* Scale text up by 10% */
+    color: #555; /* Optional: Change color on hover */
+  }
+  
+  .main {
+    max-width: 800px; /* Max width for main content */
+    width: 100%; /* Full width on smaller screens */
+    margin: 0; /* Remove all margins */
+    display: flex; /* Enable Flexbox */
+    flex-direction: column; /* Align items vertically */
+    align-items: center; /* Center items horizontally */
+    padding-top: 20px; /* Optional: Add some top padding */
+    transform: translateY(-70px); /* Move up by 20px; adjust value as needed */
+}
+
+  
+  .introduction {
+    margin: 20px 0;
+    text-align: center; /* Center text in the introduction */
+  }
+  
+  .introduction h2 {
+    font-size: 2rem; /* Title size */
+    margin-bottom: 10px;
+  }
+  
+  .introduction p {
+    font-size: 1rem; /* Paragraph size */
+    line-height: 1.5; /* Spacing between lines */
+    margin: 10px 0; /* Margin around paragraphs */
+  }
+  
+  /* Logo Wrapper with Responsive Styling */
+.logoWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+}
+
+  
+ /* Keyframes for gradient animation */
+@keyframes gradientAnimation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  .ctaButton {
+    background: linear-gradient(90deg, #F5A9B8 0%, #A30262 100%);
+    background-size: 200% 200%; /* Double the size to allow for animation */
+    color: white; /* Button text color */
+    display: inline-block; /* Make the button inline-block */
+    margin: 0em;
+    padding: 0; /* No padding, controlled by height */
+    width: 27em;
+    height: 4em;
+    border: 0;
+    border-radius: 30px;
+    text-align: center;
+    white-space: nowrap;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease; /* Smooth background transition */
+    font-size: 1rem; /* Button text size */
+    font-family: "Rubik";
+    position: relative;
+  }
+  
+  /* Add hover effect */
+  .ctaButton:hover {
+    animation: gradientAnimation 3s ease infinite; /* Apply the animation on hover */
+    transform: scale(1.05); /* Slightly scale up on hover */
+  }
+  
+  
+  /* Responsive Styles */
+  @media (max-width: 600px) {
+    .introduction h2 {
+      font-size: 1.5rem; /* Smaller title size on mobile */padding: 0px 20px 5px;
+    }
+  
+    .introduction p {
+      font-size: 0.9rem; /* Smaller paragraph size on mobile */padding: 0px 20px 5px;
+    }
+  
+    .ctaButton {
+      width: 100%; /* Full width button on mobile */
+      font-size: 1rem; /* Adjust button size */
+      width: 21em;
+    }
+  }
+
+  .container {
+    padding: 20px;
+    background-color: #121212; /* Dark background like Spotify */
+    color: white; /* Text color */
+    min-height: 100vh; /* Fill full viewport height */
+    display: flex;
+    flex-direction: column; /* Align children vertically */
+    align-items: center; /* Center children horizontally */
+    justify-content: center; /* Center children vertically */
+    text-align: center; /* Center text inside children */
+}
+
