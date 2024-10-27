@@ -57,7 +57,7 @@ const Songs = () => {
             <link rel="icon" href="/favicon.png" sizes="32x32" type="image/png" />
             <meta property="og:description" content={`Find song info of our database with lyrics, chords, and VST guides.`} />
             <meta property="og:image" content="/Logo.svg"/>
-            <meta property="og:url" content={`https://kolmuzika.web.app/songs/`} />
+            <meta property="og:url" content={`https://kolmuzika.vercel.app/songs/`} />
             <meta property="og:type" content="music.song" />
             <meta name="twitter:card" content="/Logo.svg"/>
             <meta name="twitter:title" content="Songs - Kolmuzika"/>
