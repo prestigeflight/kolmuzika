@@ -157,7 +157,7 @@
   .main {
     max-width: 800px; /* Max width for main content */
     width: 100%; /* Full width on smaller screens */
-    margin: 0 auto; /* Remove all margins */
+    margin: 0; /* Remove all margins */
     display: flex; /* Enable Flexbox */
     flex-direction: column; /* Align items vertically */
     align-items: center; /* Center items horizontally */
