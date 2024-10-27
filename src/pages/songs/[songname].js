@@ -65,7 +65,7 @@ const SongPage = () => {
         <link rel="icon" href="/favicon.png" sizes="32x32" type="image/png" />
         <meta property="og:description" content={`Find Info of ${song.title} by ${song.artists.join(', ')}. Released in ${song.releasedyear}.`} />
         <meta property="og:image" content={song.albumimg}/>
-        <meta property="og:url" content={`https://kolmuzika.web.app/songs/${songname}`} />
+        <meta property="og:url" content={`https://kolmuzika.vercel.app/songs/${songname}`} />
         <meta property="og:type" content="music.song" />
         <meta name="twitter:card" content={song.albumimg}/>
         <meta name="twitter:title" content={song.title}/>
