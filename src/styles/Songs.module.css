@@ -8,7 +8,6 @@
   display: flex;
   flex-direction: column; /* Allows for vertical alignment */
   justify-content: flex-start; /* Align items at the start */
-  width: 100%;
 }
 
 .title {
